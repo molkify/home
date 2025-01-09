@@ -104,7 +104,7 @@ urlInput.addEventListener('keypress', (event) => {
       const formattedUrl = /^(?:http|https):\/\//i.test(userInput) ? userInput : `https://${userInput}`;
       window.location.href = formattedUrl;
     } else {
-      const searchUrl = `https://www.duckduckgo.com/?q=%s${encodeURIComponent(userInput)}`;
+      const searchUrl = `https://search.brave.com/search?q=${encodeURIComponent(userInput)}`;
       window.location.href = searchUrl;
     }
   }
